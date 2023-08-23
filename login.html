@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: 23%;
+        }
+
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .login-bnt {
+            width: 78px;
+            padding: 4px 0;
+            background-color: #1C8AFA;
+            margin: auto;
+            font-weight: bold;
+            border: none;
+        }
+
+        .login-bnt:active {
+            box-shadow: 1px 1px 4px black inset;
+            width: 76px;
+            padding: 3px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="content">
+            <div>
+                <h1>Login</h1>
+            </div>
+            <div class="form-section">
+                <form action="#">
+                    <input type="email" placeholder="E-mail">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="login-bnt">Login</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
