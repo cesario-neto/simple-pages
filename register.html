@@ -23,7 +23,7 @@
         }
 
         .register-section {
-            padding-top: 15%;
+            padding-top: 10%;
         }
 
         .register-section__register-form {
@@ -32,9 +32,18 @@
             align-items: center;
         }
 
+        .register-section__register-form label {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 3%;
+        }
+
         .register-section__register-form input {
             width: 95%;
             margin: 4% auto;
+            border: 1px solid #000000;
+            border-radius: 7px;
+            padding: 5px;
         }
 
         .register-section__register-form__form-fields {
@@ -55,9 +64,24 @@
         .register-section__register-form__bnt {
             margin-top: 6%;
             width: 30%;
-            padding: 6px 0;
+            padding: 6px 0; 
+            background-color: #1C8AFA;
+            border: none;
+            font-weight: bold;
+            box-shadow: 1px 1px 1px #000000;
         }
-    
+
+        .register-section__register-form__bnt:active {
+            box-shadow: 1px 1px 4px #000000 inset;
+            width: 29%px;
+            padding: 5px 0;
+        }
+
+        @media (max-width: 900px) {
+            .register-section {
+                padding-top: 25%;
+            }
+        }
     </style>
 </head>
 
