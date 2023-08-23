@@ -15,20 +15,45 @@
             height: 100vh;
         }
 
-        .content {
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .img-section {
+            background-color: #0B43DE;
+            width: 70%;
+        }
+
+        .login-content {
             display: flex;
             flex-direction: column;
             width: 23%;
         }
 
-        .form-section form {
+        .login-content__title {
+            text-align: center;
+            margin-bottom: 15px;
+
+        }
+
+        .login-content__form-section form {
             display: flex;
             flex-direction: column;
             justify-content: center;
             gap: 15px;
         }
 
-        .login-bnt {
+        .login-content__form-section__input {
+            height: 30px;
+            width: 100%;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .login-content__form-section__login-bnt {
             width: 78px;
             padding: 4px 0;
             background-color: #1C8AFA;
@@ -37,7 +62,7 @@
             border: none;
         }
 
-        .login-bnt:active {
+        .login-content__form-section__login-bnt:active {
             box-shadow: 1px 1px 4px black inset;
             width: 76px;
             padding: 3px 0;
@@ -47,18 +72,22 @@
 
 <body>
     <main>
-        <div class="content">
+        <section class="img-section">
+
+            <img src="" alt="">
+        </section>
+        <section class="login-content">
             <div>
-                <h1>Login</h1>
+                <h1 class="login-content__title">Login</h1>
             </div>
-            <div class="form-section">
+            <div class="login-content__form-section">
                 <form action="#">
-                    <input type="email" placeholder="E-mail">
-                    <input type="password" placeholder="Password">
-                    <button type="submit" class="login-bnt">Login</button>
+                    <input class="login-content__form-section__input" type="email" placeholder="E-mail">
+                    <input class="login-content__form-section__input" type="password" placeholder="Password">
+                    <button class="login-content__form-section__login-bnt" type="submit">Login</button>
                 </form>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 
