@@ -5,30 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .register-section {
+            padding-top: 15%;
+        }
+
+        .register-section__register-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .register-section__register-form input {
+            width: 95%;
+            margin: 4% auto;
+        }
+
+        .register-section__register-form__form-fields {
+            display: flex;
+        }
+
+        .register-section__register-form__name-field__field {
+            display: flex;
+            flex-direction: column;
+            /* gap: 10px; */
+            align-items: center;
+        }
+
+        .register-section__register-form__name-field__field input {
+            width: 90%;
+        }
+
+        .register-section__register-form__bnt {
+            margin-top: 6%;
+            width: 30%;
+            padding: 6px 0;
+        }
+    
+    </style>
 </head>
 
 <body>
     <main>
-        <section>
-            <form action="">
-                <div>
-                    <label for="">First name</label>
-                    <input type="text">
-                    <label for="">Last name</label>
-                    <input type="text">
+        <section class="register-section">
+            <form action="" class="register-section__register-form">
+                <div class="register-section__register-form__form-fields">
+                    <div class="register-section__register-form__name-field__field">
+                        <label for="">First name</label>
+                        <input type="text">
+                    </div>
+                    <div class="register-section__register-form__name-field__field">
+                        <label for="">Last name</label>
+                        <input type="text">
+                    </div>
                 </div>
                 <label for="">Username</label>
                 <input type="text">
                 <label for="">E-mail</label>
                 <input type="email">
-                <div>
-                    <label for="">Password</label>
-                    <input type="password">
-                    <label for="">Repeat Password</label>
-                    <input type="password">
+                <div class="register-section__register-form__form-fields">
+                    <div class="register-section__register-form__name-field__field">
+                        <label for="">Password</label>
+                        <input type="password">
+                    </div>
+                    <div class="register-section__register-form__name-field__field">
+                        <label for="">Repeat Password</label>
+                        <input type="password">
+                    </div>
                 </div>
 
-                <button type="submit">Register</button>
+                <button type="submit" class="register-section__register-form__bnt">Register</button>
             </form>
         </section>
     </main>
