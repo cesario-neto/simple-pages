@@ -22,15 +22,11 @@
             gap: 20px;
         }
 
-        .img-section {
-            background-color: #0B43DE;
-            width: 70%;
-        }
-
         .login-content {
             display: flex;
             flex-direction: column;
             width: 23%;
+            padding-top: 15%;
         }
 
         .login-content__title {
@@ -67,15 +63,18 @@
             width: 76px;
             padding: 3px 0;
         }
+
+        @media (max-width: 1200px) {
+            .login-content {
+                width: 45%;
+                padding-top: 30%;
+            }
+        }
     </style>
 </head>
 
 <body>
     <main>
-        <section class="img-section">
-
-            <img src="" alt="">
-        </section>
         <section class="login-content">
             <div>
                 <h1 class="login-content__title">Login</h1>
