@@ -5,17 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
+    <style>
+        :root {
+            --link-color: #F7F2E9;
+            --link-hover-color: #D1CDC5;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .header-container {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+        }
+
+        .header-container__nav-bar {
+            display: flex;
+            gap: 1rem;
+            font-size: 2rem;
+        }
+
+        .header-container__nav-bar a {
+            text-decoration: none;
+            color: var(--link-color);
+        }
+
+        .header-container__nav-bar a:hover {
+            color: var(--link-hover-color);
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <a href="dashboard_model1.html"><img src="assets/dash_image.png"
-                alt="dashboard-img"></a>
-        <nav>
+    <header class="header-container">
+        <!-- dashboard icon -->
+        <a href="dashboard_model1.html"><img src="assets/dash_image.png" alt="dashboard-img"></a>
+
+        <!-- nav bar -->
+        <nav class="header-container__nav-bar">
             <a href="dashboard_model1.html">home</a>
             <a href="#">login</a>
             <a href="#">logout</a>
         </nav>
+        <!-- end nav bar -->
     </header>
     <main>
 
