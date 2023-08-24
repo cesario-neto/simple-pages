@@ -37,13 +37,44 @@
         .header-container__nav-bar a:hover {
             color: var(--link-hover-color);
         }
+
+        .main-section {
+            width: 80%;
+            margin: auto;
+        }
+
+        .main-section__flex-container {
+            padding-top: 6rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .main-section__flex-container__recipe {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-section__flex-container__recipe a {
+            text-decoration: none;
+            color: #6B6965;
+        }
+
+        .main-section__flex-container__recipe a p {
+            padding-top: 1rem;
+            font-size: 2rem;
+        }
     </style>
 </head>
 
 <body>
     <header class="header-container">
         <!-- dashboard icon -->
-        <a href="dashboard_model1.html"><img src="assets/dash_image.png" alt="dashboard-img"></a>
+        <a href="dashboard_model1.html">
+            <img src="assets/dash_image.png" alt="dashboard-img">
+        </a>
 
         <!-- nav bar -->
         <nav class="header-container__nav-bar">
@@ -54,7 +85,34 @@
         <!-- end nav bar -->
     </header>
     <main>
-
+        <section class="main-section">
+            <div class="main-section__flex-container">
+                <div class="main-section__flex-container__recipe">
+                    <a href="#">
+                        <img src="assets/salad.png" alt="">
+                        <p>salad</p>
+                    </a>
+                </div>
+                <div class="main-section__flex-container__recipe">
+                    <a href="#">
+                        <img src="assets/cake.jpg" alt="">
+                        <p>cake</p>
+                    </a>
+                </div>
+                <div class="main-section__flex-container__recipe">
+                    <a href="#">
+                        <img src="assets/soup.jpg" alt="">
+                        <p>soup</p>
+                    </a>
+                </div>
+                <div class="main-section__flex-container__recipe">
+                    <a href="#">
+                        <img src="assets/steak.jpg" alt="">
+                        <p>steak</p>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
 </body>
