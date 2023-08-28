@@ -5,16 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DropDown</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline;
+        }
+
+        .dropdown>button {
+            background-color: green;
+            border: none;
+            width: 7rem;
+            height: 2rem;
+            font-weight: bold;
+            font-size: 1rem;
+            color: aliceblue;
+            cursor: pointer;
+        }
+
+        .dropdown__content {
+            display: none;
+            z-index: 1;
+            position: absolute;
+            background-color: #DADCF0;
+            width: 100%;
+        }
+
+        .dropdown__content>ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dropdown__content>ul>li {
+            padding: 1rem 0 1rem 1rem;
+        }
+
+        .dropdown__content>ul>li:hover {
+            background-color: #CFD1E4;
+        }
+
+        .dropdown__content__link {
+            text-decoration: none;
+            color: #000000;
+            font-size: 1.2rem;
+        }
+
+        .dropdown:hover .dropdown__content {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
-    <div>
+    <div class="dropdown">
         <button type="button">Menu</button>
-        <div>
+        <div class="dropdown__content">
             <ul>
-                <li><a href="#">link 1</a></li>
-                <li><a href="#">link 2</a></li>
-                <li><a href="#">link 3</a></li>
+                <li><a class="dropdown__content__link" href="#">link 1</a></li>
+                <li><a class="dropdown__content__link" href="#">link 2</a></li>
+                <li><a class="dropdown__content__link" href="#">link 3</a></li>
             </ul>
         </div>
     </div>
